@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login | ALGOTRADES</title>
+    <!-- custom-theme -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script type="application/x-javascript">
+        addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } 
+    </script>
+
+    <!-- //custom-theme -->
+    <link rel="stylesheet" href="public/bootstrap/css/bootstrap.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="public/images/shortcut-logo.png" />
+    <!-- js -->
+    <script src="public/user/reg-log/js/jquery.min.html"></script>
+    <!-- //js -->
+    <!-- font-awesome-icons -->
+    <link href="public/user/reg-log/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome-icons -->
+    <link href="public/user/reg-log/css/style976c976c976c976c.css?90796" rel="stylesheet"
+        type="text/css" media="all" />
+    <link
+        href="http://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext"
+        rel="stylesheet">
+
+
+</head>
+<body>
+    <div class="main">
+        <h1>
+            <div class="sitelogo" style="background: rgba(1, 0, 21, 0.66); padding: 15px 0 5px;">
+                <!-- <a href="index.html"><img src="2hr2.png"
+                        width="230" height="" alt="site logo"></a> -->
+            </div>
+        </h1>
+
+        <div class="w3_agile_main_grids">
+
+            <!-- Alerts Starts -->
+            
+            <!-- Alerts Starts -->
+            
+            <form method=post class="agile_form" action="#">
+                
+                <center>
+                
+                <input type="hidden" name="_token" value="">
+                <fieldset>
+                    <h3>Account Login</h3>
+                    <div class="form-group">
+                        <div class="wthree_input">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <input type="text" name="email" class="form-control" size="30" autofocus="autofocus"
+                                placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="wthree_input">
+                            <i class="fa fa-lock" aria-hidden="true"></i>
+                            <input type="password" name="password" class="form-control" size="30" placeholder="Password"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="wthree_input">
+                            <button type="submit" name="login" class="btn btn-primary agileinfo_primary submit" onclick="login()"
+                                style="margin-top: 10px;">Login Now</button>
+                        </div>
+                    </div>
+                    <div class="clear"> </div>
+                </fieldset>
+                </center>
+            </form>
+            <div id="progress"><a href="#">Forgot Password?</a>
+            </div>
+            <div class="agileits_copyright">
+                <p>&copy; 2017 - 2023  All rights reserved | powered by <a
+                        href="index.html">Home</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="public/bootstrap/js/bootstrap.js"></script>
+</body>
+<script>
+    function login() {
+        var password = document.getElementById("password");
+        if (password.value.lenght >=8)  {
+            alert("Login Successful");
+        }
+        else {
+            alert("Login Failed");
+        }
+    }
+</script>
+</html>
